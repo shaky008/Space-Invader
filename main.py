@@ -24,6 +24,7 @@ enemy4 = Enemy()
 wn.listen()
 wn.onkey(player.left, "Left")
 wn.onkey(player.right, "Right")
+wn.onkey(lambda: bullet.fire(player), "space")
 
 enemy_list = [enemy1, enemy2, enemy3, enemy4]
 
@@ -48,5 +49,15 @@ while not gameOver:
         elif enemy.xcor() < -280:
             enemy.direction = "right"
             enemy.sety(enemy.ycor() - enemy.drop_down)
+
+        if bullet.state == "fire":
+            bullet.showturtle()
+            bullet.sety(bullet.ycor() + bullet.speed)
+
+        if bullet.ycor() > 280:
+            bullet.state = "ready"
+            bullet.hideturtle()
+            
+
 
 wn.exitonclick()
