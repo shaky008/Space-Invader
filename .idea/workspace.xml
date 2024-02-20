@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c5374b3-bd6d-4cc0-9698-6e24805a9a8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SpaceInvader.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bullet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Enemy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/invader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/player.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/space_invaders_background.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScoreBoard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 1
@@ -50,7 +42,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/sshak/OneDrive/Desktop/practice/python practice/Snake"
   }
 }]]></component>

@@ -25,16 +25,28 @@ wn.listen()
 wn.onkey(player.left, "Left")
 wn.onkey(player.right, "Right")
 
-
-
-
 enemy_list = [enemy1, enemy2, enemy3, enemy4]
 
 for i in range(len(enemy_list)):
     ranx = random.randint(-250, 250)
     rany = random.randint(100, 200)
     enemy_list[i].penup()
-    enemy_list[i].goto(ranx,rany)
+    enemy_list[i].goto(ranx, rany)
     enemy_list[i].pendown()
+
+gameOver = False
+
+while not gameOver:
+    for enemy in enemy_list:
+        if enemy.direction == "right":
+            enemy.setx(enemy.xcor() + enemy.move_speed)
+        elif enemy.direction == "left":
+            enemy.setx(enemy.xcor() - enemy.move_speed)
+        if enemy.xcor() > 280:
+            enemy.direction = "left"
+            enemy.sety(enemy.ycor() - enemy.drop_down)
+        elif enemy.xcor() < -280:
+            enemy.direction = "right"
+            enemy.sety(enemy.ycor() - enemy.drop_down)
 
 wn.exitonclick()
