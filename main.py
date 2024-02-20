@@ -57,7 +57,7 @@ while not gameOver:
         if bullet.ycor() > 280:
             bullet.state = "ready"
             bullet.hideturtle()
-            
+
 
 
 wn.exitonclick()
