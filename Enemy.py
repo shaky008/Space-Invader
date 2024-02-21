@@ -6,7 +6,8 @@ class Enemy(Turtle):
         super().__init__()
         self.screen.register_shape("Images/invader.gif")
         self.shape("Images/invader.gif")
-        self.move_speed = 3
+        self.move_speed = 20
         self.direction = "right"
-        self.drop_down = 40
+        self.drop_down = 80
+        self.penup()
 

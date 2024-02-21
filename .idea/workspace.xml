@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3c5374b3-bd6d-4cc0-9698-6e24805a9a8d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bullet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/Player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScoreBoard.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreBoard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -11,7 +11,7 @@ class Bullet(Turtle):
         self.penup()
         self.hideturtle()
         self.state = "ready"
-        self.speed = 5
+        self.speed = 10
 
 
     def fire(self, player):

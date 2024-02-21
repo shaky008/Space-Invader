@@ -23,3 +23,5 @@ class Player(Turtle):
             self.setx(self.xcor() + 0)
         else:
             self.setx(self.xcor() + 20)
+
+

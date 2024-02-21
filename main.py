@@ -5,12 +5,18 @@ from Enemy import Enemy
 from Bullet import Bullet
 import random
 
+
+def is_collision(turtle1, turtle2):
+    distance = turtle1.distance(turtle2.xcor(), turtle2.ycor())
+    return distance < 20
+
+
 wn = turtle.Screen()
 
 wn.setup(700, 700)
 wn.bgcolor("black")
-wn.title("Space Invader")
-wn.bgpic("Images/space_invaders_background.gif")
+wn.title("The Lord Of The Space: Return Of The Invaders")
+# wn.bgpic("Images/space_invaders_background.gif")
 wn.register_shape("Images/player.gif")
 
 score = ScoreBoard()
@@ -39,6 +45,20 @@ gameOver = False
 
 while not gameOver:
     for enemy in enemy_list:
+        if (score.score == 200):
+            gameOver = True
+            score.you_won()
+
+        if is_collision(player, enemy):
+            gameOver = True
+            score.game_over()
+            player.hideturtle()
+
+        if enemy.ycor() < -270:
+            gameOver = True
+            score.game_over()
+            player.hideturtle()
+
         if enemy.direction == "right":
             enemy.setx(enemy.xcor() + enemy.move_speed)
         elif enemy.direction == "left":
@@ -57,6 +77,15 @@ while not gameOver:
         if bullet.ycor() > 280:
             bullet.state = "ready"
             bullet.hideturtle()
+
+        if is_collision(bullet,enemy):
+            score.increase_score()
+            bullet.hideturtle()
+            bullet.goto(player.xcor(), player.ycor())
+            bullet.state = "ready"
+            new_ran_x = random.randint(-250, 250)
+            new_ran_y = random.randint(100, 200)
+            enemy.setpos(new_ran_x,new_ran_y)
 
 
 
