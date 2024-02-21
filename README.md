@@ -1,4 +1,4 @@
-# The Lord Of The Space: Return Of The Invaders (InComplete)
+# The Lord Of The Space: Return Of The Invaders
 
 A simple Space Invader game implemented in Python using the Turtle module.
 
